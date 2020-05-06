@@ -47,9 +47,9 @@ class GamesView(APIView):
 
         try:
             if category_id:
-                queryset = Game.objects.filter(category=category_id)
+                queryset = Game.objects.filter(category=category_id).order_by('id')
             else:
-                queryset = Game.objects.all()
+                queryset = Game.objects.all().order_by('id')
         except Exception:
             logger.exception('An exception occurred retrieving game records'
                              ' from model', exc_info=True)

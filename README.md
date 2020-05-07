@@ -12,4 +12,6 @@ Clone the repository and follow standard procedure to start development server f
 - Dockerize the app
 - Write logs in file
 - Add profiling
-- Use generic view though html rendering in DRF generic views is not obvious as it is designed to serve JSON
+- Add unit tests
+- Add sentry for exception analysis
+- Use generic view though html rendering in DRF generic views is not obvious as it is designed to serve JSON.
